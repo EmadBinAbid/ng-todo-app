@@ -1,0 +1,7 @@
+<div class="todo-input">
+  <input [placeholder]="inputFieldPlaceHolder" (keyup.enter)="addItem()" [(ngModel)]="inputText">
+  <button type="button" (click)="addItem()" class="buttons">{{inputButtonText}}</button> <br>
+  <div class="following-text">
+      TODO: {{inputText}}
+  </div>
+</div>

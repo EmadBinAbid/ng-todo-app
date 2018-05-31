@@ -1,0 +1,13 @@
+<div class="todo-main">
+  <div class="heading-main">
+    Welcome to {{title}} <br>
+  </div>
+
+  <div class="text-main">
+    {{mainText}}
+  </div>
+
+  <ta-todo-input (itemAdded)="addNewItem($event)" ></ta-todo-input>
+  <ta-todo-list (itemDeleted)="deleteItem($event)" (allDeleted)="deleteAllItems($event)" [list]="todoList"></ta-todo-list>
+
+</div>
